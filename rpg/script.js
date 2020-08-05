@@ -1,53 +1,55 @@
-function createPassword(length, useNum, useLow, useUpr, useSym) {
+function createPassword(length, useNumber, useLower, useUpper, useSymbol) {
 	let nums = "0123456789".split("")
 	let chrs = "abcdefghijklmnopqrstuvwxyz".split("")
 	let syms = "!\"#$%&'()-=^~\\|@`[{;+:*]},<.>/?_".split("")
-	if (!useNum && !useLow && !useUpr && !useSym || length <= 0) {
+
+	if (!useNumber && !useLower && !useUpper && !useSymbol || length <= 0) {
 		return "Error"
 	}
-	var pass = "", i = 0;
+
+	var password = "", i = 0;
 	while (i < length) {
 		let type = Math.floor(Math.random() * 4)
-		if (type == 0 && useNum) {
+		if (type == 0 && useNumber) {
 			let rand = Math.floor(Math.random() * nums.length)
-			if (pass.slice(-1) != nums[rand]) {
-				pass += nums[rand]
+			if (password.slice(-1) != nums[rand]) {
+				password += nums[rand]
 				i++
 			}
-		} else if (type == 1 && useLow) {
+		} else if (type == 1 && useLower) {
 			let rand = Math.floor(Math.random() * chrs.length)
-			if (pass.slice(-1) != chrs[rand]) {
-				pass += chrs[rand]
+			if (password.slice(-1) != chrs[rand]) {
+				password += chrs[rand]
 				i++
 			}
-		} else if (type == 2 && useUpr) {
+		} else if (type == 2 && useUpper) {
 			let rand = Math.floor(Math.random() * chrs.length)
-			if (pass.slice(-1) != chrs[rand].toUpperCase()) {
-				pass += chrs[rand].toUpperCase()
+			if (password.slice(-1) != chrs[rand].toUpperCase()) {
+				password += chrs[rand].toUpperCase()
 				i++
 			}
-		} else if (type == 3 && useSym) {
+		} else if (type == 3 && useSymbol) {
 			let rand = Math.floor(Math.random() * syms.length)
-			if (pass.slice(-1) != syms[rand]) {
-				pass += syms[rand]
+			if (password.slice(-1) != syms[rand]) {
+				password += syms[rand]
 				i++
 			}
 		}
 	}
-	return pass
+	return password
 }
 
-function onGenPressed() {
+function onGenerateButtonPressed() {
 	let passElem = document.getElementById("password")
 	let length = document.getElementById("length").value
-	let useNum = document.getElementById("useNum").checked
-	let useLow = document.getElementById("useLow").checked
-	let useUpr = document.getElementById("useUpr").checked
-	let useSym = document.getElementById("useSym").checked
-	passElem.value = createPassword(length, useNum, useLow, useUpr, useSym)
+	let useNumber = document.getElementById("useNumber").checked
+	let useLower = document.getElementById("useLower").checked
+	let useUpper = document.getElementById("useUpper").checked
+	let useSymbol = document.getElementById("useSymbol").checked
+	passElem.value = createPassword(length, useNumber, useLower, useUpper, useSymbol)
 }
 
-function onCpyPressed() {
+function onCopyButtonPressed() {
 	let passElem = document.getElementById("password")
 	passElem.select()
 	document.execCommand("Copy")

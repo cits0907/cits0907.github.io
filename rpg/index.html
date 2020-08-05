@@ -2,24 +2,26 @@
 <html>
 
 <head>
-	<title>Password Generator</title>
+	<title>Random Password Generator</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="noindex, nofollow">
 	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div id="ttl">Password Generator</div><br>
-	<span id="lenSpan">Length:</span>
-	<input type="number" id="length" class="txtbox" value="16"></input><br>
-	<input type="text" id="password" class="txtbox"></input><br>
-	<input type="checkbox" id="useNum" class="chkbox" checked>Use Numbers</input><br>
-	<input type="checkbox" id="useLow" class="chkbox" checked>Use Lowercase Characters</input><br>
-	<input type="checkbox" id="useUpr" class="chkbox" checked>Use Uppercase Characters</input><br>
-	<input type="checkbox" id="useSym" class="chkbox">Use Symbols</input><br>
-	<span id="genBtn" onClick="onGenPressed()" class="btn">Generate</span>
-	<span id="cpyBtn" onClick="onCpyPressed()" class="btn">Copy</span>
+	<div class="pageTitle">Password Generator</div><br>
+	<span class="lengthSpan">Length:</span>
+	<input type="number" id="length" class="textbox" value="16"></input><br>
+	<input type="text" id="password" class="textbox"></input><br>
+	<input type="checkbox" id="useNumber" class="checkbox" checked>Use Numbers</input><br>
+	<input type="checkbox" id="useLower" class="checkbox" checked>Use Lowercase Characters</input><br>
+	<input type="checkbox" id="useUpper" class="checkbox" checked>Use Uppercase Characters</input><br>
+	<input type="checkbox" id="useSymbol" class="checkbox">Use Symbols</input><br>
+
+	<div class="buttonArea">
+		<span id="generateButton" onClick="onGenerateButtonPressed()" class="button">Generate</span>
+		<span id="copyButton" onClick="onCopyButtonPressed()" class="button">Copy</span>
+	</div>
 
 	<script src="script.js"></script>
 </body>
