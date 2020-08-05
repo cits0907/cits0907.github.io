@@ -1,0 +1,18 @@
+body {
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+}
+
+#password {
+	width: 40%;
+}
+
+.chkbox {
+	position: absolute;
+	left: 40%;
+}
+
+.btn {
+	margin: 10px;
+}
