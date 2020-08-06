@@ -4,7 +4,7 @@ body {
 
 .pageTitle {
 	text-align: center;
-	font-size: 10vw;
+	font-size: 11vw;
 	color: skyblue;
 }
 
@@ -14,7 +14,7 @@ body {
 }
 
 .lengthField {
-	width: 60vw;
+	width: 57vw;
 	height: 5vh;
 	font-size: 7vw;
 }
