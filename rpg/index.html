@@ -12,24 +12,24 @@
 	<div class="pageTitle">Password Generator</div><br>
 
 	<div class="lengthArea">
-		<span>Length:</span>
-		<input type="number" id="length" class="textbox" value="16">
+		<span>文字数：</span>
+		<input type="number" id="length" class="lengthField" value="16">
 	</div>
 
-	<div class="password"><input type="text" id="password"></div>
+	<div class="password"><input type="text" id="password" class="passwordField"></div>
 
 	<div class="checkboxParent">
-		<div class="checkbox"><input type="checkbox" id="useNumber" checked>Use Numbers</div>
-		<div class="checkbox"><input type="checkbox" id="useLower" checked>Use Lowercase Characters</div>
-		<div class="checkbox"><input type="checkbox" id="useUpper" checked>Use Uppercase Characters</div>
-		<div class="checkbox"><input type="checkbox" id="useSymbol">Use Symbols</div>
+		<div class="checkboxNode"><input type="checkbox" id="useNumber" checked>数字を使用する</div><br>
+		<div class="checkboxNode"><input type="checkbox" id="useLower" checked>小文字を使用する</div><br>
+		<div class="checkboxNode"><input type="checkbox" id="useUpper" checked>大文字を使用する</div><br>
+		<div class="checkboxNode"><input type="checkbox" id="useSymbol">記号を使用する</div><br>
 	</div>
 
 	<br>
 
-	<div class="buttonArea">
-		<span onClick="onGenerateButtonPressed()" class="button">Generate</span>
-		<span onClick="onCopyButtonPressed()" class="button">Copy</span>
+	<div class="buttonParent">
+		<span onClick="onGenerateButtonPressed()" class="button">作　成</span>
+		<span onClick="onCopyButtonPressed()" class="button">コピー</span>
 	</div>
 
 	<script src="script.js"></script>

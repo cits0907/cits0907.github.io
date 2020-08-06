@@ -5,8 +5,18 @@
 	color: skyblue;
 }
 
+body {
+	background: lightcyan;
+}
+
 .lengthArea {
 	text-align: center;
+	font-size: 30px;
+}
+
+.lengthField {
+	width: 190px;
+	height: 30px;
 	font-size: 30px;
 }
 
@@ -14,13 +24,24 @@
 	text-align: center;
 }
 
+.passwordField {
+	width: 320px;
+	height: 30px;
+	font-size: 30px;
+}
+
 .checkboxParent {
 	text-align: center;
 }
 
-.checkbox {
-	/*text-align: left;*/
+.checkboxNode {
+	text-align: left;
+	display: inline-block;
 	font-size: 30px;
+}
+
+.buttonParent {
+	text-align: center;
 }
 
 .button {
@@ -36,8 +57,4 @@
 .button:active {
 	background: #8ddf0f;
 	color: #3535da;
-}
-
-.buttonArea {
-	text-align: center;
 }
