@@ -11,30 +11,31 @@
 <body>
 	<div class="pageTitle">Password Generator</div><br>
 
-	<div class="lengthArea">
-		<span>文字数</span>
-		<input type="number" id="length" class="lengthField" value="16">
-	</div><br>
+	<div class="lengthParent">
+		文字数<input type="number" id="length" class="lengthField" value="16">
+	</div>
+	
+	<br>
 
-	<div class="password">
+	<div class="passwordParent">
 		<input type="text" id="password" class="passwordField">
 	</div>
 
 	<div class="checkboxParent">
 		<div class="checkboxInner">
-			<div class="checkboxNode" onclick="onCheckboxTitleClicked('useNumber')">
+			<div class="checkboxLine" onclick="onCheckboxTitleClicked('useNumber')">
 				<input type="checkbox" id="useNumber" class="checkbox" checked>数字を使用する
 			</div>
 
-			<div class="checkboxNode" onclick="onCheckboxTitleClicked('useLower')">
+			<div class="checkboxLine" onclick="onCheckboxTitleClicked('useLower')">
 				<input type="checkbox" id="useLower" class="checkbox" checked>小文字を使用する
 			</div>
 
-			<div class="checkboxNode" onclick="onCheckboxTitleClicked('useUpper')">
+			<div class="checkboxLine" onclick="onCheckboxTitleClicked('useUpper')">
 				<input type="checkbox" id="useUpper" class="checkbox" checked>大文字を使用する
 			</div>
 
-			<div class="checkboxNode" onclick="onCheckboxTitleClicked('useSymbol')">
+			<div class="checkboxLine" onclick="onCheckboxTitleClicked('useSymbol')">
 				<input type="checkbox" id="useSymbol" class="checkbox">記号を使用する
 			</div>
 		</div>
