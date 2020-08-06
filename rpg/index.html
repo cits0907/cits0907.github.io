@@ -10,17 +10,26 @@
 
 <body>
 	<div class="pageTitle">Password Generator</div><br>
-	<span class="lengthSpan">Length:</span>
-	<input type="number" id="length" class="textbox" value="16"></input><br>
-	<input type="text" id="password" class="textbox"></input><br>
-	<input type="checkbox" id="useNumber" class="checkbox" checked>Use Numbers</input><br>
-	<input type="checkbox" id="useLower" class="checkbox" checked>Use Lowercase Characters</input><br>
-	<input type="checkbox" id="useUpper" class="checkbox" checked>Use Uppercase Characters</input><br>
-	<input type="checkbox" id="useSymbol" class="checkbox">Use Symbols</input><br>
+
+	<div class="lengthArea">
+		<span>Length:</span>
+		<input type="number" id="length" class="textbox" value="16">
+	</div>
+
+	<div class="password"><input type="text" id="password"></div>
+
+	<div class="checkboxParent">
+		<div class="checkbox"><input type="checkbox" id="useNumber" checked>Use Numbers</div>
+		<div class="checkbox"><input type="checkbox" id="useLower" checked>Use Lowercase Characters</div>
+		<div class="checkbox"><input type="checkbox" id="useUpper" checked>Use Uppercase Characters</div>
+		<div class="checkbox"><input type="checkbox" id="useSymbol">Use Symbols</div>
+	</div>
+
+	<br>
 
 	<div class="buttonArea">
-		<span id="generateButton" onClick="onGenerateButtonPressed()" class="button">Generate</span>
-		<span id="copyButton" onClick="onCopyButtonPressed()" class="button">Copy</span>
+		<span onClick="onGenerateButtonPressed()" class="button">Generate</span>
+		<span onClick="onCopyButtonPressed()" class="button">Copy</span>
 	</div>
 
 	<script src="script.js"></script>
