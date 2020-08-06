@@ -18,12 +18,12 @@
 
 	<div class="password"><input type="text" id="password" class="passwordField"></div>
 
-	<div class="checkboxParent">
-		<div class="checkboxNode"><input type="checkbox" id="useNumber" checked>数字を使用する</div><br>
-		<div class="checkboxNode"><input type="checkbox" id="useLower" checked>小文字を使用する</div><br>
-		<div class="checkboxNode"><input type="checkbox" id="useUpper" checked>大文字を使用する</div><br>
-		<div class="checkboxNode"><input type="checkbox" id="useSymbol">記号を使用する</div><br>
-	</div>
+	<span class="checkboxParent">
+		<span class="checkboxNode" onclick="onCheckboxTitleClicked('useNumber')"><input type="checkbox" id="useNumber" class="checkbox" checked>数字を使用する</span><br>
+		<span class="checkboxNode" onclick="onCheckboxTitleClicked('useLower')"><input type="checkbox" id="useLower" class="checkbox" checked>小文字を使用する</span><br>
+		<span class="checkboxNode" onclick="onCheckboxTitleClicked('useUpper')"><input type="checkbox" id="useUpper" class="checkbox" checked>大文字を使用する</span><br>
+		<span class="checkboxNode" onclick="onCheckboxTitleClicked('useSymbol')"><input type="checkbox" id="useSymbol" class="checkbox">記号を使用する</span><br>
+	</span>
 
 	<br>
 

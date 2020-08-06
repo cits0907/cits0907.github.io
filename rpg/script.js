@@ -55,3 +55,11 @@ function onCopyButtonPressed() {
 	document.execCommand("Copy")
 	passElem.blur()
 }
+
+function onCheckboxTitleClicked(type){
+	if (document.getElementById(type).checked) {
+		document.getElementById(type).checked = false;
+	} else {
+		document.getElementById(type).checked = true;
+	}
+}
