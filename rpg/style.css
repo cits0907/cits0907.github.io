@@ -15,7 +15,7 @@ body {
 }
 
 .lengthField {
-	width: 190px;
+	width: 220px;
 	height: 30px;
 	font-size: 30px;
 }
@@ -32,12 +32,14 @@ body {
 
 .checkboxParent {
 	text-align: center;
-	display: block;
+}
+
+.checkboxInner {
+	text-align: left;
+	display: inline-block;
 }
 
 .checkboxNode {
-	text-align: left;
-	display: inline-block;
 	font-size: 30px;
 	cursor: pointer;
 }
