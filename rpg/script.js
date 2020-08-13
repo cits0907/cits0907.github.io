@@ -11,7 +11,7 @@ function createPassword(length, useNumbers, useLowers, useUppers, useSymbols) {
 
 	var i = 0, password = "";
 	while (i < length) {
-		var random = Math.floor(Math.random() * letters.length);
+		let random = Math.floor(Math.random() * letters.length);
 		if (password.slice(-1) != letters.charAt(random)) {
 			password += letters.charAt(random);
 			i++;
@@ -21,20 +21,20 @@ function createPassword(length, useNumbers, useLowers, useUppers, useSymbols) {
 }
 
 function onGenerateButtonPressed() {
-	let passElem = document.getElementById("password");
+	let passwordElement = document.getElementById("password");
 	let length = document.getElementById("length").value;
 	let useNumber = document.getElementById("useNumber").checked;
 	let useLower = document.getElementById("useLower").checked;
 	let useUpper = document.getElementById("useUpper").checked;
 	let useSymbol = document.getElementById("useSymbol").checked;
-	passElem.value = createPassword(length, useNumber, useLower, useUpper, useSymbol);
+	passwordElement.value = createPassword(length, useNumber, useLower, useUpper, useSymbol);
 }
 
 function onCopyButtonPressed() {
-	let passElem = document.getElementById("password");
-	passElem.select();
+	let passwordElement = document.getElementById("password");
+	passwordElement.select();
 	document.execCommand("Copy");
-	passElem.blur();
+	passwordElement.blur();
 }
 
 function onCheckboxTitleClicked(type){
