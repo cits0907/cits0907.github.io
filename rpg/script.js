@@ -1,39 +1,20 @@
-function createPassword(length, useNumber, useLower, useUpper, useSymbol) {
-	let nums = "0123456789".split("");
-	let chrs = "abcdefghijklmnopqrstuvwxyz".split("");
-	let syms = "!\"#$%&'()-=^~\\|@`[{;+:*]},<.>/?_".split("");
+function createPassword(length, useNumbers, useLowers, useUppers, useSymbols) {
+	var letters = "";
+	letters += useNumbers ? "0123456789" : "";
+	letters += useLowers ? "abcdefghijklmnopqrstuvwxyz" : "";
+	letters += useUppers ? "ABCDEFGHIJKLMNOPQRSTUVWXYZ" : "";
+	letters += useSymbols ? "!\"#$%&'()-=^~\\|@`[{;+:*]},<.>/?_" : "";
 
-	if (!useNumber && !useLower && !useUpper && !useSymbol || length <= 0) {
+	if (letters == "" || length <= 0) {
 		return "Error";
 	}
 
-	var password = "", i = 0;
+	var i = 0, password = "";
 	while (i < length) {
-		let type = Math.floor(Math.random() * 4);
-		if (type == 0 && useNumber) {
-			let rand = Math.floor(Math.random() * nums.length);
-			if (password.slice(-1) != nums[rand]) {
-				password += nums[rand];
-				i++;
-			}
-		} else if (type == 1 && useLower) {
-			let rand = Math.floor(Math.random() * chrs.length);
-			if (password.slice(-1) != chrs[rand]) {
-				password += chrs[rand];
-				i++;
-			}
-		} else if (type == 2 && useUpper) {
-			let rand = Math.floor(Math.random() * chrs.length);
-			if (password.slice(-1) != chrs[rand].toUpperCase()) {
-				password += chrs[rand].toUpperCase();
-				i++;
-			}
-		} else if (type == 3 && useSymbol) {
-			let rand = Math.floor(Math.random() * syms.length);
-			if (password.slice(-1) != syms[rand]) {
-				password += syms[rand];
-				i++;
-			}
+		var random = Math.floor(Math.random() * letters.length);
+		if (password.slice(-1) != letters.charAt(random)) {
+			password += letters.charAt(random);
+			i++;
 		}
 	}
 	return password;
