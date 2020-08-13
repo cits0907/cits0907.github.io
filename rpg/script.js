@@ -38,9 +38,6 @@ function onCopyButtonPressed() {
 }
 
 function onCheckboxTitleClicked(type){
-	if (document.getElementById(type).checked) {
-		document.getElementById(type).checked = false;
-	} else {
-		document.getElementById(type).checked = true;
-	}
+	let checkboxElement = document.getElementById(type);
+	checkboxElement.checked = checkboxElement.checked ? false : true;
 }
