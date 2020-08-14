@@ -5,7 +5,7 @@
 - コピーボタンを押すとクリップボードにコピーすることができます。
 - 同じ文字が連続して出現することはありません。  
 - 使用する文字は以下の通りです。  
-- 数字: 0123456789  
-- 小文字: abcdefghijklmnopqrstuvwxyz  
-- 大文字: ABCDEFGHIJKLMNOPQRSTUVWXYZ  
-- 記号: !"#$%&'()-=^~\|@`[{;+:*]},<.>/?_  
+  - 数字: 0123456789  
+  - 小文字: abcdefghijklmnopqrstuvwxyz  
+  - 大文字: ABCDEFGHIJKLMNOPQRSTUVWXYZ  
+  - 記号: !"#$%&'()-=^~\|@`[{;+:*]},<.>/?_  
