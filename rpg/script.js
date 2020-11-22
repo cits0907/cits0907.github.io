@@ -51,3 +51,20 @@ function onCheckBoxChanged(className) {
 
 	charactersElement.disabled = checkboxElement.checked ? false : true;
 }
+
+function onResetButtonPressed() {
+	document.getElementById("length").value = 16;
+	document.getElementById("password").value = "";
+	document.getElementById("useNumber").checked = true;
+	document.getElementById("useLower").checked = true;
+	document.getElementById("useUpper").checked = true;
+	document.getElementById("useSymbol").checked = false;
+	document.getElementById("includedNumber").value = "0123456789";
+	document.getElementById("includedLower").value = "abcdefghijklmnopqrstuvwxyz";
+	document.getElementById("includedUpper").value = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	document.getElementById("includedSymbol").value = "!\"#$%&'()-=^~\\|@`[{;+:*]},<.>/?_";
+	document.getElementById("includedNumber").disabled = false;
+	document.getElementById("includedLower").disabled = false;
+	document.getElementById("includedUpper").disabled = false;
+	document.getElementById("includedSymbol").disabled = true;
+}

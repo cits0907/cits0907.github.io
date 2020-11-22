@@ -63,10 +63,10 @@ body {
 }
 
 .button {
-	margin: 10vw;
+	margin: 3vw;
 	background: #adff2f;
 	color: #5555fa;
-	font-size: 8vw;
+	font-size: 7vw;
 	cursor: pointer;
 	border-radius: 10px 10px 10px 10px;
 	padding: 1vw;
