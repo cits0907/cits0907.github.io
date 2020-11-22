@@ -31,23 +31,27 @@
 	<div class="checkboxParent">
 		<div class="checkboxInner">
 			<div class="checkboxLine">
-				<input type="checkbox" id="useNumber" class="checkbox" checked>
-				<span onclick="onCheckboxTitleClicked('useNumber')">数字を使用する</span>
+				<input onChange="onCheckBoxChanged('numberLine')" type="checkbox" id="useNumber" class="checkbox numberLine" checked>
+				<span onclick="onCheckboxTitleClicked('numberLine')">数　字</span>
+				<input type="text" id="includedNumber" class="charactersField numberLine" value="0123456789">
 			</div>
 
 			<div class="checkboxLine">
-				<input type="checkbox" id="useLower" class="checkbox" checked>
-				<span onclick="onCheckboxTitleClicked('useLower')">小文字を使用する</span>
+				<input onChange="onCheckBoxChanged('lowerLine')" type="checkbox" id="useLower" class="checkbox lowerLine" checked>
+				<span onclick="onCheckboxTitleClicked('lowerLine')">小文字</span>
+				<input type="text" id="includedLower" class="charactersField lowerLine" value="abcdefghijklmnopqrstuvwxyz">
 			</div>
 
 			<div class="checkboxLine">
-				<input type="checkbox" id="useUpper" class="checkbox" checked>
-				<span onclick="onCheckboxTitleClicked('useUpper')">大文字を使用する</span>
+				<input onChange="onCheckBoxChanged('upperLine')" type="checkbox" id="useUpper" class="checkbox upperLine" checked>
+				<span onclick="onCheckboxTitleClicked('upperLine')">大文字</span>
+				<input type="text" id="includedUpper" class="charactersField upperLine" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
 			</div>
 
 			<div class="checkboxLine">
-				<input type="checkbox" id="useSymbol" class="checkbox">
-				<span onclick="onCheckboxTitleClicked('useSymbol')">記号を使用する</span>
+				<input onChange="onCheckBoxChanged('symbolLine')" type="checkbox" id="useSymbol" class="checkbox symbolLine">
+				<span onclick="onCheckboxTitleClicked('symbolLine')">記　号</span>
+				<input type="text" id="includedSymbol" class="charactersField symbolLine" value="!&quot;#$%&'()-=^~\|@`[{;+:*]},&lt;.&gt;/?_" disabled>
 			</div>
 		</div>
 	</div>
