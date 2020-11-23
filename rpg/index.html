@@ -26,37 +26,35 @@
 		<input type="text" id="password" class="passwordField">
 	</div>
 
-	<br>
-
 	<div class="checkboxParent">
 		<div class="checkboxInner">
 			<div class="checkboxLine">
 				<input onChange="onCheckBoxChanged('numberLine')" type="checkbox" id="useNumber" class="checkbox numberLine" checked>
-				<span onclick="onCheckboxTitleClicked('numberLine')">数　字</span>
+				<span onclick="onCheckboxTitleClicked('numberLine')">数字</span><br>
 				<input type="text" id="includedNumber" class="charactersField numberLine" value="0123456789">
 			</div>
 
 			<div class="checkboxLine">
 				<input onChange="onCheckBoxChanged('lowerLine')" type="checkbox" id="useLower" class="checkbox lowerLine" checked>
-				<span onclick="onCheckboxTitleClicked('lowerLine')">小文字</span>
+				<span onclick="onCheckboxTitleClicked('lowerLine')">小文字</span><br>
 				<input type="text" id="includedLower" class="charactersField lowerLine" value="abcdefghijklmnopqrstuvwxyz">
 			</div>
 
 			<div class="checkboxLine">
 				<input onChange="onCheckBoxChanged('upperLine')" type="checkbox" id="useUpper" class="checkbox upperLine" checked>
-				<span onclick="onCheckboxTitleClicked('upperLine')">大文字</span>
+				<span onclick="onCheckboxTitleClicked('upperLine')">大文字</span><br>
 				<input type="text" id="includedUpper" class="charactersField upperLine" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
 			</div>
 
 			<div class="checkboxLine">
 				<input onChange="onCheckBoxChanged('symbolLine')" type="checkbox" id="useSymbol" class="checkbox symbolLine">
-				<span onclick="onCheckboxTitleClicked('symbolLine')">記　号</span>
+				<span onclick="onCheckboxTitleClicked('symbolLine')">記号</span><br>
 				<input type="text" id="includedSymbol" class="charactersField symbolLine" value="!&quot;#$%&'()-=^~\|@`[{;+:*]},&lt;.&gt;/?_" disabled>
 			</div>
 		</div>
 	</div>
 
-	<br>
+	<br><br>
 
 	<div class="buttonParent">
 		<span onClick="onGenerateButtonPressed()" class="button">作　成</span>
