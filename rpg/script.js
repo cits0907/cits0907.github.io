@@ -23,12 +23,19 @@ function createPassword(length, characters) {
 }
 
 function onGenerateButtonPressed() {
+	var length = document.getElementById("length").value;
+	if (length > 100000) {
+		if (!confirm("処理に時間がかかりますがよろしいですか？")) {
+			return;
+		}
+	}
+
 	var characters = "";
 	characters += document.getElementById("useNumber").checked ? document.getElementById("includedNumber").value : "";
 	characters += document.getElementById("useLower").checked ? document.getElementById("includedLower").value : "";
 	characters += document.getElementById("useUpper").checked ? document.getElementById("includedUpper").value : "";
 	characters += document.getElementById("useSymbol").checked ? document.getElementById("includedSymbol").value : "";
-	document.getElementById("password").value = createPassword(document.getElementById("length").value, characters);
+	document.getElementById("password").value = createPassword(length, characters);
 }
 
 function onCopyButtonPressed() {
