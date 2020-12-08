@@ -24,10 +24,8 @@ function createPassword(length, characters) {
 
 function onGenerateButtonPressed() {
 	var length = document.getElementById("length").value;
-	if (length > 100000) {
-		if (!confirm("処理に時間がかかりますがよろしいですか？")) {
-			return;
-		}
+	if (length >= 100000 && !confirm("処理に時間がかかりますがよろしいですか？")) {
+		return;
 	}
 
 	var characters = "";
