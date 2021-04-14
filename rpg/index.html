@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="ja">
 
 <head>
 	<title>Random Password Generator</title>
@@ -13,53 +13,53 @@
 </head>
 
 <body>
-	<div class="pageTitle">Password Generator</div><br>
+	<div class="pageTitle">Password Generator</div>
 
-	<div class="lengthParent">
+	<div class="parent">
 		<span>文字数</span>
 		<input type="number" id="length" class="lengthField" value="16">
 	</div>
-	
-	<br>
 
-	<div class="passwordParent">
-		<input type="text" id="password" class="passwordField">
-	</div>
-
-	<div class="checkboxParent">
+	<div class="parent">
 		<div class="checkboxInner">
 			<div class="checkboxLine">
-				<input onChange="onCheckBoxChanged('numberLine')" type="checkbox" id="useNumber" class="checkbox numberLine" checked>
+				<input onChange="onCheckBoxChanged('numberLine')" type="checkbox" id="useNumber" class="checkbox numberLine">
 				<span onclick="onCheckboxTitleClicked('numberLine')">数字</span><br>
-				<input type="text" id="includedNumber" class="charactersField numberLine" value="0123456789">
+				<input type="text" id="includedNumber" class="fullSizeField numberLine">
 			</div>
 
 			<div class="checkboxLine">
-				<input onChange="onCheckBoxChanged('lowerLine')" type="checkbox" id="useLower" class="checkbox lowerLine" checked>
+				<input onChange="onCheckBoxChanged('lowerLine')" type="checkbox" id="useLower" class="checkbox lowerLine">
 				<span onclick="onCheckboxTitleClicked('lowerLine')">小文字</span><br>
-				<input type="text" id="includedLower" class="charactersField lowerLine" value="abcdefghijklmnopqrstuvwxyz">
+				<input type="text" id="includedLower" class="fullSizeField lowerLine">
 			</div>
 
 			<div class="checkboxLine">
-				<input onChange="onCheckBoxChanged('upperLine')" type="checkbox" id="useUpper" class="checkbox upperLine" checked>
+				<input onChange="onCheckBoxChanged('upperLine')" type="checkbox" id="useUpper" class="checkbox upperLine">
 				<span onclick="onCheckboxTitleClicked('upperLine')">大文字</span><br>
-				<input type="text" id="includedUpper" class="charactersField upperLine" value="ABCDEFGHIJKLMNOPQRSTUVWXYZ">
+				<input type="text" id="includedUpper" class="fullSizeField upperLine">
 			</div>
 
 			<div class="checkboxLine">
 				<input onChange="onCheckBoxChanged('symbolLine')" type="checkbox" id="useSymbol" class="checkbox symbolLine">
 				<span onclick="onCheckboxTitleClicked('symbolLine')">記号</span><br>
-				<input type="text" id="includedSymbol" class="charactersField symbolLine" value="!&quot;#$%&'()-=^~\|@`[{;+:*]},&lt;.&gt;/?_" disabled>
+				<input type="text" id="includedSymbol" class="fullSizeField symbolLine">
 			</div>
 		</div>
 	</div>
 
-	<br><br>
+	<br>
 
-	<div class="buttonParent">
+	<div class="parent">
 		<span onClick="onGenerateButtonPressed()" class="button">作　成</span>
 		<span onClick="onResetButtonPressed()" class="button">初期化</span>
 		<span onClick="onCopyButtonPressed()" class="button">コピー</span>
+	</div>
+
+	<br>
+
+	<div class="parent">
+		<input type="text" id="password" class="fullSizeField">
 	</div>
 
 	<script src="script.js"></script>

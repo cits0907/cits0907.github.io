@@ -1,36 +1,28 @@
 body {
 	background: lightcyan;
+	font-size: 30px;
 }
 
 .pageTitle {
 	text-align: center;
-	font-size: 5vw;
+	font-size: 70px;
 	color: skyblue;
 }
 
-.lengthParent {
+.parent {
 	text-align: center;
-	font-size: 3vw;
 }
 
 .lengthField {
 	width: 30vw;
-	height: 5vh;
-	font-size: 3vw;
+	height: 30px;
+	font-size: 30px;
 }
 
-.passwordParent {
-	text-align: center;
-}
-
-.passwordField {
+.fullSizeField {
 	width: 40vw;
-	height: 5vh;
-	font-size: 3vw;
-}
-
-.checkboxParent {
-	text-align: center;
+	height: 30px;
+	font-size: 30px;
 }
 
 .checkboxInner {
@@ -39,37 +31,25 @@ body {
 }
 
 .checkboxLine {
-	font-size: 3vw;
 	cursor: pointer;
 }
 
 .checkboxLine:active {
-	background: lightgray;
+	background: lightskyblue;
 } 
 
 .checkbox {
-	width: 2vw;
-	height: 2vw;
-}
-
-.charactersField {
-	width: 40vw;
-	height: 5vh;
-	font-size: 2vw;
-}
-
-.buttonParent {
-	text-align: center;
+	width: 20px;
+	height: 20px;
 }
 
 .button {
-	margin: 1.8vw;
+	margin: 10px;
 	background: #adff2f;
 	color: #5555fa;
-	font-size: 3vw;
 	cursor: pointer;
 	border-radius: 10px 10px 10px 10px;
-	padding: 1vw;
+	padding: 15px;
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
