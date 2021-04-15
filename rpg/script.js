@@ -73,7 +73,7 @@ function onCheckBoxChanged(className) {
 // 初期化ボタンが押された時の処理
 function onResetButtonPressed() {
 	document.getElementById("length").value = 16;
-	document.getElementById("password").value = "ここにパスワードが表示されます。";
+	document.getElementById("password").placeholder = "ここにパスワードが表示されます。";
 	document.getElementById("useNumber").checked = true;
 	document.getElementById("useLower").checked = true;
 	document.getElementById("useUpper").checked = true;
