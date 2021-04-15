@@ -1,2 +1,83 @@
-@import url(pc.css) screen and (min-width: 480px);
-@import url(mobile.css) screen and (max-width: 479px);
+body {
+	background: lightcyan;
+	font-size: 20px;
+}
+
+.pageTitle {
+	text-align: center;
+	font-size: 35px;
+	color: skyblue;
+}
+
+.parent {
+	text-align: center;
+}
+
+.lengthField {
+	width: 65vw;
+	height: 25px;
+	font-size: 20px;
+}
+
+.fullSizeField {
+	width: 85vw;
+	height: 25px;
+	font-size: 20px;
+}
+
+.checkboxInner {
+	text-align: left;
+	display: inline-block;
+}
+
+.checkboxLine {
+	cursor: pointer;
+}
+
+.checkboxLine:active {
+	background: lightskyblue;
+} 
+
+.checkbox {
+	width: 20px;
+	height: 20px;
+}
+
+.button {
+	margin: 10px;
+	background: #adff2f;
+	color: #5555fa;
+	cursor: pointer;
+	border-radius: 10px 10px 10px 10px;
+	padding: 15px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
+.button:active {
+	background: #8ddf0f;
+	color: #3535da;
+}
+
+@media (min-width: 480px) {
+	body {
+		font-size: 30px;
+	}
+
+	.pageTitle {
+		font-size: 70px;
+	}
+
+	.lengthField {
+		width: 30vw;
+		height: 30px;
+		font-size: 30px;
+	}
+	
+	.fullSizeField {
+		width: 40vw;
+		height: 30px;
+		font-size: 30px;
+	}
+ }
