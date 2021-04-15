@@ -4,16 +4,16 @@ function createPassword(length, characters) {
 	var i;
 	// 文字種の重複を削除
 	for (i = 0; i < characters.length; i++) {
-		if(tmpDuplicates.indexOf(characters.charAt(i)) == -1) {
+		if(!tmpDuplicates.includes(characters.charAt(i))) {
 			tmpDuplicates += characters.charAt(i);
 		}
 	}
 	characters = tmpDuplicates;
 
-	// 重複削除の結果，1種類しか残らない場合，長さが1未満の場合は終了
+	// 重複削除の結果，1種類しか残らない場合やパスワードの長さが1未満の場合は終了
 	if (characters.length < 2 || length < 1) {
-		alert("入力に誤りがあります");
-		return "エラー";
+		alert("入力に誤りがあります！");
+		return "エラー！";
 	}
 
 	// 文字が連続しないようにしながらパスワードを生成
@@ -52,7 +52,7 @@ function onCopyButtonPressed() {
 	passwordElement.blur();
 }
 
-// チェックボックスに対応した文字をクリックされた時
+// チェックボックスに対応した文字をクリックされた時の処理
 function onCheckboxTitleClicked(className) {
 	// チェックボックスを反転させる
 	let checkboxElement = document.getElementsByClassName(className)[0];
@@ -73,7 +73,7 @@ function onCheckBoxChanged(className) {
 // 初期化ボタンが押された時の処理
 function onResetButtonPressed() {
 	document.getElementById("length").value = 16;
-	document.getElementById("password").value = "";
+	document.getElementById("password").value = "ここにパスワードが表示されます。";
 	document.getElementById("useNumber").checked = true;
 	document.getElementById("useLower").checked = true;
 	document.getElementById("useUpper").checked = true;
@@ -88,5 +88,5 @@ function onResetButtonPressed() {
 	document.getElementById("includedSymbol").disabled = true;
 }
 
-// 初回読み込み時，初期化する．
+// 初回読み込み時，初期化する
 onResetButtonPressed();
