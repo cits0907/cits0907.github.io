@@ -1,6 +1,6 @@
 body {
 	background: lightcyan;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .pageTitle {
@@ -16,13 +16,13 @@ body {
 .lengthField {
 	width: 65vw;
 	height: 30px;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .fullSizeField {
 	width: 85vw;
 	height: 30px;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 .checkboxInner {
