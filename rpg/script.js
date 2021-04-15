@@ -74,7 +74,7 @@ function onCheckBoxChanged(className) {
 function onResetButtonPressed() {
 	document.getElementById("length").value = 16;
 	document.getElementById("password").value = "";
-	document.getElementById("password").placeholder = "ここにパスワードが表示されます。";
+	document.getElementById("password").placeholder = "ここにパスワードが表示されます";
 	document.getElementById("useNumber").checked = true;
 	document.getElementById("useLower").checked = true;
 	document.getElementById("useUpper").checked = true;
