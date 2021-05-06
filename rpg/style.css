@@ -43,6 +43,12 @@ body {
 	height: 20px;
 }
 
+.buttonParent {
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+}
+
 .button {
 	margin: 10px;
 	background: #adff2f;
@@ -50,14 +56,15 @@ body {
 	cursor: pointer;
 	border-radius: 10px 10px 10px 10px;
 	padding: 15px;
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
 }
 
 .button:active {
 	background: #8ddf0f;
 	color: #3535da;
+}
+
+.sourceParent {
+	font-size: 15px;
 }
 
 @media (min-width: 480px) {
@@ -79,5 +86,9 @@ body {
 		width: 40vw;
 		height: 30px;
 		font-size: 30px;
+	}
+
+	.sourceParent {
+		font-size: 20px;
 	}
  }
