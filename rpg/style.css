@@ -1,6 +1,9 @@
 body {
 	background: lightcyan;
 	font-size: 20px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
 }
 
 .pageTitle {
@@ -14,13 +17,13 @@ body {
 }
 
 .lengthField {
-	width: 65vw;
+	width: 75vw;
 	height: 25px;
 	font-size: 20px;
 }
 
 .fullSizeField {
-	width: 85vw;
+	width: 90vw;
 	height: 25px;
 	font-size: 20px;
 }
@@ -41,12 +44,6 @@ body {
 .checkbox {
 	width: 20px;
 	height: 20px;
-}
-
-.buttonParent {
-	user-select: none;
-	-webkit-user-select: none;
-	-moz-user-select: none;
 }
 
 .button {
@@ -77,13 +74,13 @@ body {
 	}
 
 	.lengthField {
-		width: 30vw;
+		width: 60vw;
 		height: 30px;
 		font-size: 30px;
 	}
 	
 	.fullSizeField {
-		width: 40vw;
+		width: 70vw;
 		height: 30px;
 		font-size: 30px;
 	}
