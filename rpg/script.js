@@ -10,7 +10,7 @@ function createPassword(length, characters) {
 	}
 	characters = tmpDuplicates;
 
-	// 重複削除の結果，1種類しか残らない場合やパスワードの長さが1未満の場合は終了
+	// 重複削除の結果、1種類しか残らない場合やパスワードの長さが1未満の場合は終了
 	if (characters.length < 2 || length < 1) {
 		alert("入力に誤りがあります！");
 		return "エラー！";
@@ -35,7 +35,7 @@ function onGenerateButtonPressed() {
 		return;
 	}
 
-	// 入力フォームの内容を取得し，createPasswordを呼ぶ
+	// 入力フォームの内容を取得し、createPasswordを呼ぶ
 	var characters = "";
 	characters += document.getElementById("useNumber").checked ? document.getElementById("includedNumber").value : "";
 	characters += document.getElementById("useLower").checked ? document.getElementById("includedLower").value : "";
@@ -89,5 +89,5 @@ function onResetButtonPressed() {
 	document.getElementById("includedSymbol").disabled = true;
 }
 
-// 初回読み込み時，初期化する
+// 初回読み込み時、初期化する
 onResetButtonPressed();
