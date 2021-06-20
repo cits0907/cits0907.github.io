@@ -18,7 +18,7 @@ body {
 }
 
 .lengthField {
-	width: 74vw;
+	width: 75vw;
 	height: 25px;
 	font-size: 20px;
 	min-width: 280px;
@@ -77,7 +77,7 @@ body {
 	}
 
 	.lengthField {
-		width: 60vw;
+		width: 59vw;
 		height: 30px;
 		font-size: 30px;
 	}
